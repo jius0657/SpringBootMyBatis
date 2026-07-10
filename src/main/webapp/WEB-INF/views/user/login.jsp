@@ -46,7 +46,7 @@
 
                 $.ajax({
                         url: "/user/loginProc",
-                        type: "post"
+                        type: "post",
                         dataType: "JSON",
                         data: $("#f").serialize(),
                         success: function (json) {
@@ -77,14 +77,14 @@
                 <div class="divTableCell">아이디
                 </div>
                 <div class="divTableCell">
-                    <input type="text" name="userId" id="userId" style="..."/>
+                    <input type="text" name="userId" id="userId" style="width: 95%"/>
                 </div>
             </div>
                 <div class="divTableRow">
                     <div class="divTableCell">비밀번호
                     </div>
                     <div class="divTableCell">
-                        <input type="password" name="password" id="password" style="..."/>
+                        <input type="password" name="password" id="password" style="width: 95%"/>
                     </div>
                 </div>
             </div>
