@@ -25,14 +25,14 @@
                 location.href = "/user/searchUserId";
             })
 
-            $("#btnSearchUserId").on("click", function () {
+            $("#btnSearchPassword").on("click", function () {
                 location.href = "/user/searchPassword";
             })
 
-            $("#btnSearchUserId").on("click", function () {
+            $("#btnLogin").on("click", function () {
                 let f = document.getElementById("f");
 
-                if (f.userId, value === "") {
+                if (f.userId.value === "") {
                     alert("아이디를 입력하세요.");
                     f.userId.focus();
                     return;

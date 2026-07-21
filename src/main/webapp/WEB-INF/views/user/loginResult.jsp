@@ -24,7 +24,7 @@
         $(document).ready(function () {
 
             $("#btnSend").on("click", function () {
-                location.href = "/html/index.lhtml";
+                location.href = "/html/index.html";
 
             })
         })

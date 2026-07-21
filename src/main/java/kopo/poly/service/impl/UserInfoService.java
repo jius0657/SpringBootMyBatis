@@ -126,7 +126,7 @@ public class UserInfoService implements IUserInfoService {
     }
 
     @Override
-    public UserInfoDTO searchuserIdOrPasswordProc(UserInfoDTO pDTO) throws Exception {
+    public UserInfoDTO searchUserIdOrPasswordProc(UserInfoDTO pDTO) throws Exception {
 
         log.info("{}.searchUserIdOrPasswordproc Start!", this.getClass().getName());
 
@@ -137,8 +137,22 @@ public class UserInfoService implements IUserInfoService {
         return rDTO;
     }
 
+    @Override
+    public int newPasswordProc(UserInfoDTO pDTO) throws Exception {
 
-}
+        log.info("{}.newPasswordProc Start!", this.getClass().getName());
+
+        int success = userInfoMapper.updatePassword(pDTO);
+
+        log.info("{}.newPasswordProc End!", this.getClass().getName());
+
+        return success;
+    }
+
+
+
+        }
+
 
 
 
